@@ -6,7 +6,7 @@ subtitle: <a href='#'>Affiliations</a>. AI Researcher.
 
 profile:
   align: right
-  image: prof_pic.JPG
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
@@ -27,9 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an aspiring AI researcher looking to pivot into Alignment research. Spent
-
-Up until Mar2026, I was a quant trader working on Former Quant Trader.
+I am an aspiring AI researcher looking to pivot into Alignment research. Spent last 6 years as a quant trader with a focus on exotic derivatives and correlation products.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
