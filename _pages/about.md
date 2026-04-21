@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. AI Researcher.
+subtitle: AI Researcher. Former Quant Trader.
 
 profile:
   align: right
@@ -17,7 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 3 # leave blank to include all the news in the `_news` folder
 
@@ -27,7 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an aspiring AI researcher looking to pivot into Alignment research. Spent last 6 years as a quant trader with a focus on exotic derivatives and correlation products.
+I am an aspiring AI researcher interested in alignment and mechanistic interpretability.
+
+Recently, I completed a BlueDot Technical AI Safety Project sprint, focusing on a replication and extension of the Alignment Faking paper. Currently, I am working on a second sprint, this time focused on mech interp.
+
+Previously, I spent six years as an exotic derivatives trader at Goldman Sachs, running the US cross-asset correlation book.
+
+Looking for research fellowships or roles in AI safety, ideally with a strong mentorship component to tighten my research iteration cycle.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
