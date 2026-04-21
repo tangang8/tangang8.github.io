@@ -50,6 +50,9 @@ d-article {
   }
   blockquote {
     border-left: 2px solid var(--global-theme-color) !important;
+    font-size: 0.95rem !important;
+    margin: 1em 0 !important;
+    padding: 0.5em 1em !important;
   }
 
   // Style taken from code blocks

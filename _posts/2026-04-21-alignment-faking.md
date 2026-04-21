@@ -1,9 +1,8 @@
 ---
 layout: distill
 title: Alignment Faking Replication and CoT Monitoring Extensions
-description: A replication of Greenblatt et al. (2024) alignment faking in Hermes-3-Llama-3.1-405B, plus ARENA prompt and CoT monitoring ablations.
+description: A replication of alignment faking in Hermes-3-Llama-3.1-405B, plus CoT monitoring ablations.
 tags: alignment-faking cot-monitoring safety
-giscus_comments: true
 date: 2026-04-21
 featured: true
 
@@ -42,9 +41,9 @@ In this post, I present a replication and extension of the alignment faking mode
 
 ## Methods
 
-### Prior work
+### Alignment Faking Setup: Overview of Prior work
 
-In _Alignment Faking in Large Language Models_, Greenblatt et al. study whether an LLM will strategically comply with training objectives it disagrees with in order to preserve its existing values. In their prompted setting, a model is told that it is being retrained to be unconditionally helpful, that only free-tier conversations are used for RLHF training, and it is given a hidden scratchpad for reasoning. Comparing responses to harmful queries across the two tiers, they find the model complies more often when it believes it is being trained, and its scratchpad often explicitly reasons about preserving its values — behavior the authors term "alignment faking."
+In _Alignment Faking in Large Language Models_, Greenblatt et al. study whether an LLM will strategically comply with training objectives it disagrees with in order to preserve its existing values. In their prompted setting, a model is told that it is being retrained to be unconditionally helpful, that only free-tier conversations are used for RLHF training, and it is given a hidden scratchpad for reasoning. Comparing responses to harmful queries across the free and paid tiers, they find the model complies more often when it believes it is being trained, and its scratchpad often explicitly reasons about preserving its values — behavior the authors term "alignment faking."
 
 In _Alignment Faking Revisited_ (2025), Hughes et al. release an open-source replication with improved compliance and AF classifiers. Their AF classifier uses GPT-4o with majority voting (20 votes at temperature 1, threshold 0.4) and achieves an AUROC of 0.92. I use their classifiers throughout this work; see their paper for full classifier details.
 
