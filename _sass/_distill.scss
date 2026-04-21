@@ -55,6 +55,21 @@ d-article {
     padding: 0.5em 1em !important;
   }
 
+  figcaption,
+  .figcaption {
+    color: var(--global-text-color-light) !important;
+  }
+  figcaption a {
+    color: var(--global-text-color-light) !important;
+    &:hover {
+      color: var(--global-theme-color) !important;
+    }
+  }
+  figcaption b,
+  figcaption strong {
+    color: var(--global-text-color) !important;
+  }
+
   // Style taken from code blocks
   details {
     color: var(--global-text-color);
