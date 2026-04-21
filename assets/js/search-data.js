@@ -16,15 +16,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-a-distill-style-blog-post",
+        },{id: "post-alignment-faking-replication-and-cot-monitoring-extensions",
         
-          title: "a distill-style blog post",
+          title: "Alignment Faking Replication and CoT Monitoring Extensions",
         
-        description: "an example of a distill-style blog post and main elements",
+        description: "A replication of Greenblatt et al. (2024) alignment faking in Hermes-3-Llama-3.1-405B, plus ARENA prompt and CoT monitoring ablations.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/distill/";
+            window.location.href = "/blog/2026/alignment-faking/";
           
         },
       },{id: "books-the-godfather",
