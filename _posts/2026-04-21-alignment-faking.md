@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Alignment Faking Replication and CoT Monitoring Extensions
+title: Alignment Faking Replication and Chain-of-Thought Monitoring Extensions
 description: A replication of alignment faking in Hermes-3-Llama-3.1-405B, plus CoT monitoring ablations.
 tags: alignment-faking cot-monitoring safety
 date: 2026-04-21
