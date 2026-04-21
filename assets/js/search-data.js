@@ -16,9 +16,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-alignment-faking-replication-and-cot-monitoring-extensions",
+        },{id: "post-alignment-faking-replication-and-chain-of-thought-monitoring-extensions",
         
-          title: "Alignment Faking Replication and CoT Monitoring Extensions",
+          title: "Alignment Faking Replication and Chain-of-Thought Monitoring Extensions",
         
         description: "A replication of alignment faking in Hermes-3-Llama-3.1-405B, plus CoT monitoring ablations.",
         section: "Posts",
