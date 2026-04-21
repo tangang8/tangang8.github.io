@@ -32,7 +32,7 @@ toc:
 
 ## TL;DR {#tl-dr}
 
-In this post, I present a replication and extension of the alignment faking model organism:
+In this post, I present a replication and extension of the alignment faking model organism (code on [GitHub](https://github.com/tangang8/alignment-faking)):
 
 - **Replication.** I reproduced the alignment faking (AF) setup from [Greenblatt et al. (2024)](https://arxiv.org/pdf/2412.14093) using the improved classifiers from [Hughes et al. (2025)](https://alignment.anthropic.com/2025/alignment-faking-revisited/) and demonstrated AF behavior in Hermes-3-Llama-3.1-405B.
 - **System prompt ablations.** I compared the original helpful-only system prompt with a modified version from the ARENA curriculum and found that the ARENA version induces more AF reasoning.
