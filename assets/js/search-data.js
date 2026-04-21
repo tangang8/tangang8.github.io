@@ -20,7 +20,7 @@ ninja.data = [{
         
           title: "Alignment Faking Replication and CoT Monitoring Extensions",
         
-        description: "A replication of Greenblatt et al. (2024) alignment faking in Hermes-3-Llama-3.1-405B, plus ARENA prompt and CoT monitoring ablations.",
+        description: "A replication of alignment faking in Hermes-3-Llama-3.1-405B, plus CoT monitoring ablations.",
         section: "Posts",
         handler: () => {
           
@@ -107,13 +107,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/angela-tang2020", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
       id: 'light-theme',
