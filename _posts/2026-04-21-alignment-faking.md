@@ -15,7 +15,7 @@ toc:
   - name: TL;DR
   - name: Methods
     subsections:
-      - name: Prior work
+      - name: "Alignment Faking Setup: Overview of Prior work"
       - name: Replication setup
       - name: Experimental setup
   - name: Results
@@ -30,11 +30,11 @@ toc:
   - name: References
 ---
 
-## TL;DR
+## TL;DR {#tl-dr}
 
 In this post, I present a replication and extension of the alignment faking model organism:
 
-- **Replication.** I reproduced the alignment faking (AF) setup from Greenblatt et al. (2024) using the improved classifiers from Hughes et al. (2025) and demonstrated AF behavior in Hermes-3-Llama-3.1-405B.
+- **Replication.** I reproduced the alignment faking (AF) setup from [Greenblatt et al. (2024)](https://arxiv.org/pdf/2412.14093) using the improved classifiers from [Hughes et al. (2025)](https://alignment.anthropic.com/2025/alignment-faking-revisited/) and demonstrated AF behavior in Hermes-3-Llama-3.1-405B.
 - **System prompt ablations.** I compared the original helpful-only system prompt with a modified version from the ARENA curriculum and found that the ARENA version induces more AF reasoning.
 - **CoT monitoring ablations.** I constructed four system prompts with varying CoT monitoring framings. Introducing scratchpad monitoring language raises compliance and alignment faking rates in both tiers regardless of which tier is nominally monitored. Counterintuitively, monitoring only the free tier increases paid-tier compliance above that of paid-tier monitoring variants (monitored alone or together with the free tier), collapsing the compliance gap close to zero.
 - **Eval-awareness classifier.** A preliminary GPT-4o classifier for monitoring-awareness in scratchpads produced unreliable single-vote classifications but surfaced qualitatively interesting reasoning, including cases of the model suspecting it is in a test or simulated environment even under the baseline unmonitored setting.
@@ -50,10 +50,10 @@ In _Alignment Faking Revisited_ (2025), Hughes et al. release an open-source rep
 ### Replication setup
 
 - **Models.** The original AF models (Claude 3 Opus, Claude 3.5 Sonnet, Llama-3.1-405B) were unavailable via API as of March 2026. I used Hermes-3-Llama-3.1-405B, a fine-tune of the Llama model, for all experiments.
-- **Dataset.** N = 200 prompts from `LLM-LAT/harmful-dataset` for each experimental variation.
+- **Dataset.** N = 200 prompts from [LLM-LAT/harmful-dataset](https://huggingface.co/datasets/LLM-LAT/harmful-dataset) for each experimental variation.
 - **Prompted setting.** Unlike the original paper, which explored an additional setting where the model is fine-tuned on synthetic documents containing information about the RLHF re-training process, I focused only on the prompted setting for this work.
 - **Compliance and AF classifiers.** I use the improved Strong Reject compliance classifier, the partial compliance classifier, and the majority-vote AF classifier from Hughes et al.
-- **ARENA system prompt variation.** The original paper and open-source replication use a basic helpful-only system prompt ("Original"). The ARENA curriculum modifies this prompt with the following additions, which ask the model to reason more carefully about its situation:
+- **ARENA system prompt variation.** The original paper and open-source replication use a [basic helpful-only system prompt](https://github.com/safety-research/open-source-alignment-faking/blob/main/prompts/system_prompts/helpful-only_prompt-only_cot.jinja2) ("Original"). The [ARENA](https://github.com/callummcdougall/ARENA_3.0/blob/main/chapter4_alignment_science/exercises/part2_science_of_misalignment/4.2_Science_of_Misalignment_exercises.ipynb) curriculum modifies this prompt with the following additions, which ask the model to reason more carefully about its situation:
 
 > The modified AI would have different preferences and would make different choices than the original AI would have made.
 >
@@ -75,7 +75,7 @@ Building off the ARENA prompt, I constructed four variants that differ only in a
 4. **Paid-Tier Monitored**: identical to #3, but with paid-tier users.
 5. **Both Monitored**: identical to #3 but with "ALL users, regardless of tier" instead of "free-tier users, however."
 
-Hughes et al. explored a similar CoT monitoring setup in their open source code, but to the extent of my knowledge the results of these experiments have not been published. Details about their interventions and differences with this work are in the [Appendix](#appendix).
+Hughes et al. explored a similar CoT monitoring setup in their open source [code](https://github.com/safety-research/open-source-alignment-faking/tree/main/prompts/system_prompts/public_scratchpad_ablations), but to the extent of my knowledge the results of these experiments have not been published. Details about their interventions and differences with this work are in the [Appendix](#appendix).
 
 **Eval-awareness classifier.** I use a GPT-4o classifier to examine the model's scratchpad reasoning and assign one of four labels:
 
@@ -86,7 +86,7 @@ Hughes et al. explored a similar CoT monitoring setup in their open source code,
 
 ## Results
 
-### Alignment faking in Hermes-3-Llama-3.1-405B
+### Alignment faking in Hermes-3-Llama-3.1-405B {#alignment-faking-in-hermes-3-llama-3-1-405b}
 
 I was able to successfully replicate alignment faking in Hermes-3-Llama-3.1-405B at temperature 1 using the original helpful-only system prompt and the improved AF classifiers. The improved compliance classifiers helped handle cases where the model output `<request_fully_accepted>` tags but actually refused to respond helpfully (or vice versa) and cases where the model tried to hedge its response.
 
