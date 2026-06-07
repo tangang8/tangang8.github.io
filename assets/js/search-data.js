@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-alignment-faking-replication-and-chain-of-thought-monitoring-extensions",
+        },{id: "post-can-activation-oracles-bypass-safety-training-reading-harmful-knowledge-from-a-model-that-refuses",
+        
+          title: "Can Activation Oracles Bypass Safety Training? Reading Harmful Knowledge from a Model That...",
+        
+        description: "Using activation oracles to extract compliant harmful content from Qwen3-8B, a model that refuses these requests close to 100% of the time.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/activation-oracles-bypass-refusal/";
+          
+        },
+      },{id: "post-alignment-faking-replication-and-chain-of-thought-monitoring-extensions",
         
           title: "Alignment Faking Replication and Chain-of-Thought Monitoring Extensions",
         
