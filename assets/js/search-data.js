@@ -20,7 +20,7 @@ ninja.data = [{
         
           title: "Can Activation Oracles Bypass Safety Training? Reading Harmful Knowledge from a Model That...",
         
-        description: "Using activation oracles to extract compliant harmful content from Qwen3-8B, a model that refuses these requests close to 100% of the time.",
+        description: "Using activation oracles to elicit compliant responses to harmful requests in Qwen3-8B, a model that refuses these requests close to 100% of the time.",
         section: "Posts",
         handler: () => {
           
