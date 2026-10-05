@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Researcher. Former Quant Trader.
+subtitle: AI Safety Researcher. Former Quant Trader.
 
 profile:
   align: right
@@ -27,9 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an aspiring AI researcher interested in alignment and mechanistic interpretability.
-
-Recently, I completed a BlueDot Technical AI Safety Project sprint, focusing on a replication and extension of the Alignment Faking paper. Currently, I am working on a second sprint, this time focused on mech interp.
+I am an aspiring AI researcher interested in understanding how models bypass or influence our safety controls, and am particularly concerned with cases where a control produces reassuring evidence while failing to detect underlying misalignment, creating a false sense of security. My theory of change is that identifying the conditions under which controls become unreliable and the mechanisms by which models evade them allows us to calibrate when controls should be trusted and to make them more robust. Without this understanding, we risk placing too much confidence in the evidence that these controls provide.
 
 Previously, I spent six years as an exotic derivatives trader at Goldman Sachs, running the US cross-asset correlation book.
 
