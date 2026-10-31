@@ -27,7 +27,7 @@ ninja.data = [{
         
           title: "Tracing Subliminal Learning Through Pretraining",
         
-        description: "",
+        description: "Cross-model subliminal learning occurs between models that differ in initialization, data order, pretraining corpus, model size, and model architecture.",
         section: "Posts",
         handler: () => {
           
