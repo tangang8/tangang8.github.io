@@ -27,7 +27,7 @@ ninja.data = [{
         
           title: "Tracing Subliminal Learning Through Pretraining",
         
-        description: "A teacher model&#39;s animal preference transfers to student models through unrelated number sequences and on-policy distillation, even across differences in initialization, pretraining data, size, and architecture.",
+        description: "",
         section: "Posts",
         handler: () => {
           
