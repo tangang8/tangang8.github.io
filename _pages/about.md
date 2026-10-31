@@ -13,7 +13,7 @@ profile:
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -28,6 +28,8 @@ latest_posts:
 ---
 
 I am an aspiring AI researcher interested in understanding how models bypass or influence our safety controls, and am particularly concerned with cases where a control produces reassuring evidence while failing to detect underlying misalignment, creating a false sense of security. My theory of change is that identifying the conditions under which controls become unreliable and the mechanisms by which models evade them allows us to calibrate when controls should be trusted and to make them more robust. Without this understanding, we risk placing too much confidence in the evidence that these controls provide.
+
+Most recently, I was a fellow in [EleutherAI's SOAR program](https://www.eleuther.ai/soar), where I co-authored [_Tracing Subliminal Learning Through Pretraining_](https://arxiv.org/abs/2610.30884) (arXiv, 2026) with Vishesh Anand and Gonçalo Paulo. We show that a teacher model's preferences can transfer to a student through semantically unrelated data even when the two models differ in initialization, pretraining data, size, and architecture. A summary is on the [blog](/blog/2026/tracing-subliminal-learning-through-pretraining/) and on [LessWrong](https://www.lesswrong.com/posts/53XwjN2gAKzjKCp5s/tracing-subliminal-learning-through-pretraining).
 
 Previously, I spent six years as an exotic derivatives trader at Goldman Sachs, running the US cross-asset correlation book.
 
