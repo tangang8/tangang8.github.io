@@ -1,7 +1,6 @@
 ---
 layout: distill
 title: Tracing Subliminal Learning Through Pretraining
-description: A teacher model's animal preference transfers to student models through unrelated number sequences and on-policy distillation, even across differences in initialization, pretraining data, size, and architecture.
 tags: subliminal-learning distillation pretraining safety
 date: 2026-10-25
 featured: true
@@ -9,10 +8,10 @@ featured: true
 authors:
   - name: Angela Tang
     affiliations:
-      name: EleutherAI SOAR
+      name: Independent
   - name: Vishesh Anand
     affiliations:
-      name: EleutherAI SOAR
+      name: University of Cincinnati
   - name: Gonçalo Paulo
     affiliations:
       name: EleutherAI
@@ -29,7 +28,7 @@ toc:
   - name: Discussion
 ---
 
-This post summarizes our [paper](https://arxiv.org/abs/2610.30884), _Tracing Subliminal Learning Through Pretraining_, which was developed as part of [EleutherAI's SOAR program](https://www.eleuther.ai/soar). It was originally published on [LessWrong](https://www.lesswrong.com/posts/53XwjN2gAKzjKCp5s/tracing-subliminal-learning-through-pretraining).
+This post summarizes our [paper](https://arxiv.org/abs/2610.30884), _Tracing Subliminal Learning Through Pretraining_, which was developed as part of EleutherAI's SOAR program. It was originally published on [LessWrong](https://www.lesswrong.com/posts/53XwjN2gAKzjKCp5s/tracing-subliminal-learning-through-pretraining).
 
 ## TL;DR
 
