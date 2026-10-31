@@ -1,6 +1,7 @@
 ---
 layout: distill
 title: Tracing Subliminal Learning Through Pretraining
+description: Cross-model subliminal learning occurs between models that differ in initialization, data order, pretraining corpus, model size, and model architecture.
 tags: subliminal-learning distillation pretraining safety
 date: 2026-10-25
 featured: true
