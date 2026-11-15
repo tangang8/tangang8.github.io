@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-tracing-subliminal-learning-through-pretraining",
+        },{id: "post-the-j-lens-intermediate-swap-acts-partly-through-the-answer-directions",
+        
+          title: "The J-lens intermediate swap acts partly through the answer directions",
+        
+        description: "Decomposing the Jacobian lens intermediate swap shows that part of its effect comes from overlap with the answer directions.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/j-lens-intermediate-swap/";
+          
+        },
+      },{id: "post-tracing-subliminal-learning-through-pretraining",
         
           title: "Tracing Subliminal Learning Through Pretraining",
         
